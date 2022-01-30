@@ -1,0 +1,20 @@
+@import "vars";
+@import "mixins";
+@import "libs";
+@import "fonts";
+@import "vendor";
+
+
+//--------------------------GLOBAL-------------------------
+body {
+  min-width: 320px;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--color-dark);
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: normal;
+}
+
+
+
+//--------------------PAGES---------------------------------
