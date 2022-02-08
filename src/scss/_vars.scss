@@ -6,13 +6,18 @@ $paddingContainer: 15;
 
 //цвета
 :root{
-    --color-light: #FFFFFF;
+    --color-light: #ffffff;
+    --color-primary: #ff5a30;
+    --color-dark: #1e212c;
+    --color-grey800: #424551;
+    --color-grey700: #787A80;
+    --color-grey600: #9a9ca5;
+    --color-grey400: #d7dadd;
+    --color-grey200: #f4f5f7;
+    --color-active: #FC3300;
    
 }
 
-//брейкпоинты
-$tablet1: 999px;
-$tablet2: 767.98px;
-$mob: 639.98px;
+
 
 

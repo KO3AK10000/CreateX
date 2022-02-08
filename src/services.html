@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+@@include('html/head.html',{
+"title":"CreateX - Services"
+})
+
+<body>
+  @@include('html/header-secondary.html',{})
+  <main class="main">
+    <section class="hero hero--services">
+      <div class="container">
+        <ul class="breadcrumbs hero__breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Homepage</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Services</a>
+          </li>
+        </ul>
+        <div class="hero__content">
+          <h1 class="title-main">Services</h1>
+          <p class="descr-main">
+            If you are looking for a full-service construction company, look to Createx Construction Bureau. We are
+            doing
+            our best to be a partner for all of your construction needs.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="services section-offset">
+      <div class="container">
+        <h2 class="visually-hidden">Our services</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <div class="services__img-container">
+              <img class="services__img" src="@img/service-1.jpg" alt="Construction" width="575" height="420">
+            </div>
+            <div class="services__content">
+              <h3 class="services__subtitle title title--small">Construction</h3>
+              <p class="services__descr">
+                Sapien, feugiat faucibus orci arcu, vulputate. Tristique varius consectetur vulputate arcu, scelerisque
+                nisi, nibh. Enim semper id sodales ultricies sed ut ut augue. Mattis habitant venenatis, gravida posuere
+                massa ac interdum. Eget aliquam dignissim ut vestibulum.
+              </p>
+              <a href="" class="services__link btn btn--stroke">Learn more</a>
+            </div>
+          </li>
+          <li class="services__item">
+            <div class="services__img-container">
+              <img class="services__img" src="@img/service-2.jpg" alt="Project Development" width="575" height="420">
+            </div>
+            <div class="services__content">
+              <h3 class="services__subtitle title title--small">Project Development</h3>
+              <p class="services__descr">
+                Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet viverra in. Est nulla lectus purus
+                tincidunt massa tortor. Hendrerit vulputate elementum blandit massa vitae amet felis eget.
+              </p>
+              <a href="" class="services__link btn btn--stroke">Learn more</a>
+            </div>
+          </li>
+          <li class="services__item">
+            <div class="services__img-container">
+              <img class="services__img" src="@img/service-3.jpg" alt="Interior Design" width="575" height="420">
+            </div>
+            <div class="services__content">
+              <h3 class="services__subtitle title title--small">Interior Design</h3>
+              <p class="services__descr">
+                Eleifend orci massa et facilisis orci feugiat ac. Congue in ut lacus, turpis accumsan gravida. Aliquet
+                mattis dignissim massa sociis a, id bibendum. Egestas lorem eros, mi cras amet, vel eget molestie.
+                Turpis enim arcu, amet donec massa pellentesque nulla duis. Arcu dictum metus sed purus senectus
+                faucibus eget elementum pretium.
+              </p>
+              <a href="" class="services__link btn btn--stroke">Learn more</a>
+            </div>
+          </li>
+          <li class="services__item">
+            <div class="services__img-container">
+              <img class="services__img" src="@img/service-4.jpg" alt="Repairs" width="575" height="420">
+            </div>
+            <div class="services__content">
+              <h3 class="services__subtitle title title--small">Repairs</h3>
+              <p class="services__descr">
+                Facilisis cursus feugiat sit pulvinar amet. Ac facilisi dictum commodo, tortor gravida pretium, orci.
+                Nunc sit sollicitudin id egestas mattis. Turpis viverra nec urna ultrices urna.
+              </p>
+              <a href="" class="services__link btn btn--stroke">Learn more</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container contact__container">
+        <form class="contact__form form-contact" action="#">
+          <h2 class="subtitle subtitle--center form-contact__title">A quick way to discuss details</h2>
+          <label class="form-contact__label form-label">
+            <span class="form-label__span">Name*</span>
+            <input class="form-label__input" type="text" name="name" placeholder="Your name">
+          </label>
+          <label class="form-contact__label form-label">
+            <span class="form-label__span">Phone*</span>
+            <input class="form-label__input" type="tel" name="phone" placeholder="Your phone number">
+          </label>
+          <label class="form-contact__label form-label">
+            <span class="form-label__span">Email</span>
+            <input class="form-label__input" type="email" name="email" placeholder="Your working email">
+          </label>
+          <label class="form-contact__label form-contact__label--textarea form-label">
+            <span class="form-label__span">Message*</span>
+            <textarea class="form-label__input form-contact__textarea" name="message" placeholder="Your message"></textarea>
+          </label>
+          <label class="form-contact__checkbox checkbox">
+            <input class="checkbox__checkbox" name="agree" type="checkbox" checked>
+            <span class="checkbox__span unselectable">I agree to receive communications from Createx Construction
+              Bureau.</span>
+          </label>
+          <button class="form-contact__btn btn btn--fill" type="submit">send request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  @@include('html/footer.html',{})
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>

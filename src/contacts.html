@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+@@include('html/head.html',{
+"title":"CreateX - Contacts"
+})
+
+<body>
+  @@include('html/header-secondary.html',{})
+  <main class="main">
+    <section class="hero hero--contacts">
+      <div class="container">
+        <ul class="breadcrumbs hero__breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Homepage</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Contacts</a>
+          </li>
+        </ul>
+        <div class="hero__content">
+          <h1 class="title-main">Contacts</h1>
+          <p class="descr-main">
+            Contact us for all your construction needs. We always welcome any questions and comments.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="contact-us section-offset">
+      <div class="container">
+        <h2 class="title title--center">Contact us</h2>
+        <p class="descr">Please complete the form. Detailed information will help us to make a tuned offer.</p>
+        <div class="contact-us__content">
+          <div class="contact-us__img-container">
+            <img class="contact-us__img" src="@img/contact-img.jpg" aria-hidden="true" alt="" width="495" height="586">
+          </div>
+          <form class="contact-us__form contact-form" action="#">
+            <label class="contact-form__label contact-form__label--hulf form-label form-label--big">
+              <span class="form-label__span">Name*</span>
+              <input class="form-label__input " type="text" name="name" placeholder="Your name">
+            </label>
+            <label class="contact-form__label contact-form__label--hulf form-label form-label--big">
+              <span class="form-label__span">I am interested in</span>
+              <select class="form-label__select choices--big" name="iterested">
+                <option value="0" selected>--make your choose--</option>
+                <option value="design">Interior Design</option>
+                <option value="repairs">Repairs</option>
+                <option value="construction">Construction</option>
+              </select>
+            </label>
+            <label class="contact-form__label contact-form__label--hulf form-label form-label--big">
+              <span class="form-label__span">Phone*</span>
+              <input class="form-label__input" type="tel" name="phone" placeholder="Your phone number">
+            </label>
+            <label class="contact-form__label contact-form__label--hulf form-label form-label--big">
+              <span class="form-label__span">Location*</span>
+              <select class="form-label__select choices--big" name="location">
+                <option value="0" selected>--make your choose--</option>
+                <option value="1">New York</option>
+                <option value="2">New Jersey</option>
+                <option value="3">San Francisco</option>
+              </select>
+            </label>
+            <label class="contact-form__label contact-form__label--hulf form-label form-label--big">
+              <span class="form-label__span">Email</span>
+              <input class="form-label__input" type="email" name="email" placeholder="Your working email">
+            </label>
+            <fieldset class="contact-form__radios">
+              <span class="contact-form__span">Preferred contact method</span>
+              <div class="contact-form__radio-list">
+                <label class="contact-form__radio radio radio--big">
+                  <input class="radio__radio" name="contact-method" value="phone" type="radio" checked>
+                  <span class="radio__span unselectable">Phone</span>
+                </label>
+                <label class="contact-form__radio radio radio--big">
+                  <input class="radio__radio" name="contact-method" value="email" type="radio">
+                  <span class="radio__span unselectable">Email</span>
+                </label>
+                <label class="contact-form__radio radio radio--big">
+                  <input class="radio__radio" name="contact-method" value="viber" type="radio">
+                  <span class="radio__span unselectable">Viber</span>
+                </label>
+              </div>
+            </fieldset> 
+            <label class="contact-form__label contact-form__label--textarea form-label form-label--big">
+              <span class="form-label__span">Message*</span>
+              <textarea class="form-label__input contact-form__textarea" name="message" placeholder="Your message"></textarea>
+            </label>
+            <div class="contact-form__bottom">
+              <label class="contact-form__checkbox checkbox checkbox--big">
+                <input class="checkbox__checkbox" name="agree" type="checkbox" checked>
+                <span class="checkbox__span unselectable">I agree to receive communications from Createx Construction
+                  Bureau.</span>
+              </label>
+              <button class="contact-form__btn btn btn--large btn--fill" type="submit">send request</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="offices">
+      <div class="container">
+        <h2 class="title title--center">Our offices</h2>
+        <p class="descr">Give us a call, send us a note or visit our office. We can’t wait to hear from you!</p>
+        <ul class="offices__list">
+          <li class="offices__item">
+            <h3 class="offices__subtitle subtitle">New York, USA</h3>
+            <p class="offices__address">
+              8502 Preston Rd. Inglewood, New York 98380
+            </p>
+            <a class="offices__map" href="#">See on the map</a>
+            <a class="offices__el" href="phone:4055550128"><span class="offices__el-title">Call: </span>(405) 555-0128</a>
+            <a class="offices__el" href="mailto:hello@createx.com"><span class="offices__el-title">Email: </span>hello@createx.com</a>
+            <span class="offices__el"><span class="offices__el-title">Schedule: </span>Mon - Fri 9:00 - 18:00</span>
+          </li>
+          <li class="offices__item">
+            <h3 class="offices__subtitle subtitle">New Jersey, USA</h3>
+            <p class="offices__address">
+              2464 Royal Ln. Mesa, New Jersey 45463
+            </p>
+            <a class="offices__map" href="#">See on the map</a>
+            <a class="offices__el" href="phone:4055550111"><span class="offices__el-title">Call: </span>(405) 555-0111</a>
+            <a class="offices__el" href="mailto:hello@createx.com"><span class="offices__el-title">Email: </span>hello@createx.com</a>
+            <span class="offices__el"><span class="offices__el-title">Schedule: </span>Mon - Fri 9:00 - 18:00</span>
+          </li>
+          <li class="offices__item">
+            <h3 class="offices__subtitle subtitle">San Francisco, USA</h3>
+            <p class="offices__address">
+              8502 Preston Rd. Inglewood, San Francisco 98380
+            </p>
+            <a class="offices__map" href="#">See on the map</a>
+            <a class="offices__el" href="phone:4055550125"><span class="offices__el-title">Call: </span>(405) 555-0125</a>
+            <a class="offices__el" href="mailto:hello@createx.com"><span class="offices__el-title">Email: </span>hello@createx.com</a>
+            <span class="offices__el"><span class="offices__el-title">Schedule: </span>Mon - Fri 10:00 - 19:00</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="socials-contact">
+      <div class="container">
+        <h2 class="title title--center socials-contact__title">Find us at</h2>
+        <ul class="socials-contact__socials socials--contacts">
+          <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="whatsaap">
+                  <svg height="27" width="27">
+                      <use xlink:href="img/icons/icons.svg#whatsaap"></use>
+                  </svg>
+              </a>
+          </li>
+          <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="messenger">
+                  <svg height="27" width="27">
+                      <use xlink:href="img/icons/icons.svg#messenger"></use>
+                  </svg>
+              </a>
+          </li>
+          <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="facebook">
+                  <svg height="30" width="16">
+                      <use xlink:href="img/icons/icons.svg#facebook"></use>
+                  </svg>
+              </a>
+          </li>
+          <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="twitter">
+                  <svg height="22" width="28">
+                      <use xlink:href="img/icons/icons.svg#twitter"></use>
+                  </svg>
+              </a>
+          </li>
+          <li class="socials__item">
+              <a class="socials__link" href="#" aria-label="youtube">
+                  <svg height="22" width="32">
+                      <use xlink:href="img/icons/icons.svg#youtube"></use>
+                  </svg>
+              </a>
+          </li>
+      </ul>
+      </div>
+    </section>
+  </main>
+  @@include('html/footer.html',{})
+
+  <script src="js/app.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/scripts/choices.min.js"></script>
+</body>
+
+</html>

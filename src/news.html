@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+@@include('html/head.html',{
+"title":"CreateX - News"
+})
+
+<body>
+  @@include('html/header-secondary.html',{})
+  <main class="main">
+    <section class="hero hero--news">
+      <div class="container">
+        <ul class="breadcrumbs hero__breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Homepage</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">News</a>
+          </li>
+        </ul>
+        <div class="hero__content">
+          <h1 class="title-main">News</h1>
+          <p class="descr-main">
+            Stay tuned with our news, expert tips and articles.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="news section-offset">
+      <div class="container">
+        <h2 class="title title--center news__title">Categories</h2>
+        <div class="news__tabs tabs">
+          <div class="tabs__btns news__btns">
+            <button class="news__btn tabs__btn tabs__btn--active" data-btn="0">
+              <span class="news__category">All News</span>
+            </button>
+            <button class="news__btn tabs__btn" data-btn="1">
+              <span class="news__category unselectable">Company News</span>
+            </button>
+            <button class="news__btn tabs__btn" data-btn="2">
+              <span class="news__category unselectable">Innovation</span>
+            </button>
+            <button class="news__btn tabs__btn" data-btn="3">
+              <span class="news__category unselectable">Industry News</span>
+            </button>
+            <button class="news__btn tabs__btn" data-btn="4">
+              <span class="news__category unselectable">Expert Tips</span>
+            </button>
+            <button class="news__btn tabs__btn" data-btn="5">
+              <span class="news__category unselectable">Marketing</span>
+            </button>
+          </div>
+          <ul class="news__items">
+            <li class="news__item tabs__item tabs__item--active" data-item="1">
+              <article class="news__article news-item">
+                <div class="news-item__img-wrapper">
+                  <img class="news-item__img" src="@img/news-1.jpg" alt="news-img">
+                </div>
+                <div class="news-item__content">
+                  <h3 class="news-item__title">
+                    <a href="#">
+                      How to Build Climate Change-Resilient Infrastructure
+                    </a>
+                  </h3>
+                  <div class="news-item__meta">
+                    <a class="news-item__category" href="#">Industry News</a>
+                    <time class="news-item__date" datetime="2020-06-24">June 24, 2020</time>
+                    <span class="news-item__comment">4 comments</span>
+                  </div>
+                  <p class="news-item__text">
+                    Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel,
+                    venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="news__item tabs__item tabs__item--active" data-item="2">
+              <article class="recent-news__article news-item">
+                <div class="news-item__img-wrapper">
+                  <img class="news-item__img" src="@img/news-2.jpg" alt="news-img">
+                </div>
+                <div class="news-item__content">
+                  <h3 class="news-item__title">
+                    <a href="#">
+                      How Construction Can Help Itself
+                    </a>
+                  </h3>
+                  <div class="news-item__meta">
+                    <a class="news-item__category" href="#">Innovation</a>
+                    <time class="news-item__date" datetime="2020-06-12">June 12, 2020</time>
+                    <span class="news-item__comment">No comments</span>
+                  </div>
+                  <p class="news-item__text">
+                    Porta habitant vitae quam interdum. Leo viverra non volutpat rhoncus placerat vitae scelerisque.
+                    Rhoncus augue faucibus maecenas lacus...
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="news__item tabs__item tabs__item--active" data-item="3">
+              <article class="news__article news-item">
+                <div class="news-item__img-wrapper">
+                  <img class="news-item__img" src="@img/news-3.jpg" alt="news-img">
+                </div>
+                <div class="news-item__content">
+                  <h3 class="news-item__title">
+                    <a href="#">
+                      The Difference Between a Digger and an Excavator
+                    </a>
+                  </h3>
+                  <div class="news-item__meta">
+                    <a class="news-item__category" href="#">Industry News</a>
+                    <time class="news-item__date" datetime="2020-06-24">June 24, 2020</time>
+                    <span class="news-item__comment">4 comments</span>
+                  </div>
+                  <p class="news-item__text">
+                    Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel,
+                    venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="news__item tabs__item tabs__item--active" data-item="4">
+              <article class="news__article news-item">
+                <div class="news-item__img-wrapper">
+                  <img class="news-item__img" src="@img/news-4.jpg" alt="news-img">
+                </div>
+                <div class="news-item__content">
+                  <h3 class="news-item__title">
+                    <a href="#">
+                      Building Construction Hand Tools
+                    </a>
+                  </h3>
+                  <div class="news-item__meta">
+                    <a class="news-item__category" href="#">Industry News</a>
+                    <time class="news-item__date" datetime="2020-06-24">June 24, 2020</time>
+                    <span class="news-item__comment">4 comments</span>
+                  </div>
+                  <p class="news-item__text">
+                    Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel,
+                    venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="news__item tabs__item tabs__item--active" data-item="5">
+              <article class="news__article news-item">
+                <div class="news-item__img-wrapper">
+                  <img class="news-item__img" src="@img/news-5.jpg" alt="news-img">
+                </div>
+                <div class="news-item__content">
+                  <h3 class="news-item__title">
+                    <a href="#">
+                      Top 10 Construction Trends
+                    </a>
+                  </h3>
+                  <div class="news-item__meta">
+                    <a class="news-item__category" href="#">Industry News</a>
+                    <time class="news-item__date" datetime="2020-06-24">June 24, 2020</time>
+                    <span class="news-item__comment">4 comments</span>
+                  </div>
+                  <p class="news-item__text">
+                    Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel,
+                    venenatis nulla. Integer bibendum turpis convallis enim, nibh convallis...
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="news__item tabs__item tabs__item--active" data-item="1">
+              <article class="recent-news__article news-item">
+                <div class="news-item__img-wrapper">
+                  <img class="news-item__img" src="@img/news-6.jpg" alt="news-img">
+                </div>
+                <div class="news-item__content">
+                  <h3 class="news-item__title">
+                    <a href="#">
+                      Types of Flooring Materials
+                    </a>
+                  </h3>
+                  <div class="news-item__meta">
+                    <a class="news-item__category" href="#">Company News</a>
+                    <time class="news-item__date" datetime="2019-12-01">December 1, 2019</time>
+                    <span class="news-item__comment">No comments</span>
+                  </div>
+                  <p class="news-item__text">
+                    Maecenas donec lacinia nunc, quam sit magnis mauris. Neque bibendum et mauris, aenean. Vel arcu amet
+                    in sem parturient integer duis et nulla...
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+          <ul class="news__pagination pagination">
+            <li class="pagination__item  pagination__item--active">
+              <a class="pagination__link" href="#">
+                1
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">
+                2
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">
+                3
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">
+                4
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">                
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container contact__container">
+        <form class="contact__form form-contact" action="#">
+          <h2 class="subtitle subtitle--center form-contact__title">A quick way to discuss details</h2>
+          <label class="form-contact__label form-label">
+            <span class="form-label__span">Name*</span>
+            <input class="form-label__input" type="text" name="name" placeholder="Your name">
+          </label>
+          <label class="form-contact__label form-label">
+            <span class="form-label__span">Phone*</span>
+            <input class="form-label__input" type="tel" name="phone" placeholder="Your phone number">
+          </label>
+          <label class="form-contact__label form-label">
+            <span class="form-label__span">Email</span>
+            <input class="form-label__input" type="email" name="email" placeholder="Your working email">
+          </label>
+          <label class="form-contact__label form-contact__label--textarea form-label">
+            <span class="form-label__span">Message*</span>
+            <textarea class="form-label__input form-contact__textarea" name="message" placeholder="Your message"></textarea>
+          </label>
+          <label class="form-contact__checkbox checkbox">
+            <input class="checkbox__checkbox" name="agree" type="checkbox" checked>
+            <span class="checkbox__span unselectable">I agree to receive communications from Createx Construction
+              Bureau.</span>
+          </label>
+          <button class="form-contact__btn btn btn--fill" type="submit">send request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  @@include('html/footer.html',{})
+
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
