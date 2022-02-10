@@ -1,14 +1,21 @@
   @mixin middledesk {
-    @media (max-width: (1365.98px)) {
+    @media (max-width: (1229.98px)) {
+      @content;
+    }
+  }
+
+  @mixin minidesktop {
+    @media (min-width: (1230px)) {
       @content;
     }
   }
   
   @mixin desktop {
-    @media (min-width: (1025px)) {
+    @media (min-width: (1024.02px)) {
       @content;
     }
   }
+
   @mixin tablet {
     @media (max-width: (1023.98px)) {
       @content;

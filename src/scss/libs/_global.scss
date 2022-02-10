@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding: 0 #{$paddingContainer + px};
     max-width: calc(#{$maxWidthContainer + px} + #{$paddingContainer + px} + #{$paddingContainer + px});
+    overflow: hidden;
 }
 
 

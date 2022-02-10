@@ -4,12 +4,12 @@
 
 @@include('html/head.html',{
 "title":"CreateX - Homepage"
-})
+}) 
 
 <body>
   @@include('html/header.html',{})
   <main class="main">
-    <section class="hero hero--main">
+   <section class="hero hero--main">
       <h1 class="visually-hidden">CREATEX CONSTRUCTION</h1>
       <div class="hero__slider slider-hero swiper">
         <div class="swiper-wrapper">
@@ -93,7 +93,7 @@
       </div>
       <div class="hero__swiper-pagination"></div>
     </section>
-    <section class="video section-offset">
+     <section class="video section-offset">
       <div class="container">
         <h2 class="title title--center">We are Createx Construction Bureau</h2>
         <p class="descr">We are rightfully considered to be the best construction company in the USA.</p>
@@ -130,8 +130,8 @@
         </ul>
       </div>
     </section>
-    <section class="our-services">
-      <div class="container">
+   <section class="our-services">
+      <div class="container our-services__container">
         <form class="our-services__form form-question" action="#">
           <h3 class="subtitle subtitle--center">Want to know more? Ask us a question:</h3>
           <div class="form-question__wrapper">
@@ -147,7 +147,7 @@
               <span class="form-label__span">Message</span>
               <input class="form-label__input" type="text" name="message" placeholder="Your message">
             </label>
-            <button class="btn btn--fill" type="submit">Send</button>
+            <button class="form-question__btn btn btn--fill" type="submit">Send</button>
           </div>
         </form>
         <h2 class="title title--center">Our services</h2>
@@ -189,11 +189,11 @@
         </ul>
         <div class="subtitle-box">
           <h3 class="subtitle">Learn more about our services</h3>
-          <a href="" class="btn btn--fill btn--large">View services</a>
+          <a href="" class="subtitle-box__btn btn btn--fill btn--large">View services</a>
         </div>
       </div>
     </section>
-    <section class="portfolio section-offset">
+     <section class="portfolio section-offset">
       <div class="container">
         <div class="portfolio__topline">
           <h2 class="title portfolio__title">Browse our selected projects and learn more about our work</h2>
@@ -264,7 +264,7 @@
         </div>
         <div class="subtitle-box">
           <h3 class="subtitle">Explore all our works</h3>
-          <a href="" class="btn btn--fill btn--large">View portfolio</a>
+          <a href="" class="subtitle-box__btn btn btn--fill btn--large">View portfolio</a>
         </div>
       </div>
     </section>
@@ -425,7 +425,7 @@
           <li class="recent-news__item">
             <article class="recent-news__article news-item">
               <div class="news-item__img-wrapper">
-                <img class="news-item__img" src="@img/news-1.jpg" alt="news-img">
+                <img class="news-item__img" src="@img/news-1.jpg" alt="news-img" width="705" height="350">
               </div>
               <div class="news-item__content">
                 <h3 class="news-item__title">
@@ -448,7 +448,7 @@
           <li class="recent-news__item">
             <article class="recent-news__article news-item news-item--small">
               <div class="news-item__img-wrapper">
-                <img class="news-item__img" src="@img/news-2.jpg" alt="news-img">
+                <img class="news-item__img" src="@img/news-2.jpg" alt="news-img" width="495" height="156">
               </div>
               <div class="news-item__content">
                 <h3 class="news-item__title">
@@ -471,7 +471,7 @@
           <li class="recent-news__item">
             <article class="recent-news__article news-item news-item--small">
               <div class="news-item__img-wrapper">
-                <img class="news-item__img" src="@img/news-6.jpg" alt="news-img">
+                <img class="news-item__img" src="@img/news-6.jpg" alt="news-img" width="495" height="156">
               </div>
               <div class="news-item__content">
                 <h3 class="news-item__title">
@@ -494,7 +494,7 @@
         </ul>
         <div class="subtitle-box">
           <h3 class="subtitle">Explore all our news posts</h3>
-          <a href="" class="btn btn--fill btn--large">View all news</a>
+          <a href="" class="subtitle-box__btn btn btn--fill btn--large">View all news</a>
         </div>
       </div>
     </section>
@@ -525,7 +525,7 @@
           <button class="form-contact__btn btn btn--fill" type="submit">send request</button>
         </form>
       </div>
-    </section>
+    </section> 
   </main> 
   @@include('html/footer.html',{})
 

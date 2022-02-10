@@ -57,38 +57,38 @@ window.addEventListener('DOMContentLoaded', function () {
 
   //-----------------classModal--------------------
 
-  class Modal{
-    constructor(modal, btn){
+  class Modal {
+    constructor(modal, btn) {
       this.open = document.querySelector(btn);
       this.modal = document.querySelector(modal);
       this.close = this.modal.querySelector('.modal__close');
 
       let lastFocus;
 
-      this.open.addEventListener('click', ()=>{
+      this.open.addEventListener('click', () => {
         lastFocus = document.activeElement;
         this.modal.classList.add('modal--active');
         this.modal.setAttribute('tabindex', '0');
         this.modal.focus();
       });
 
-      this.close.addEventListener('click', ()=>{
+      this.close.addEventListener('click', () => {
         this.modal.classList.remove('modal--active');
         lastFocus.focus();
       });
 
-      
-        document.addEventListener('keydown', (e)=>{
-          if(e.keyCode == 27){
-            if(this.modal.classList.contains('modal--active')){
-              e.preventDefault();
-              this.modal.classList.remove('modal--active');
-              lastFocus.focus();
-            }
+
+      document.addEventListener('keydown', (e) => {
+        if (e.keyCode == 27) {
+          if (this.modal.classList.contains('modal--active')) {
+            e.preventDefault();
+            this.modal.classList.remove('modal--active');
+            lastFocus.focus();
           }
-        });
-      }
-    
+        }
+      });
+    }
+
   }
 
   //---------------heroMainSlider
@@ -119,14 +119,26 @@ window.addEventListener('DOMContentLoaded', function () {
   const portfolioMainSlider = document.querySelector('.main-portfolio');
   if (portfolioMainSlider) {
     const swiper = new Swiper(portfolioMainSlider, {
-      slidesPerView: 3,
+      slidesPerView: 1,
       loop: true,
-      speed: 400,
+      speed: 1000,
       spaceBetween: 30,
 
       navigation: {
         nextEl: '.portfolio-main__btn--next',
         prevEl: '.portfolio-main__btn--prew',
+      },
+      breakpoints: {
+        576: {
+          slidesPerView: 2
+        },
+        1024: {
+          slidesPerView: 3
+        },
+      },
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
       },
 
     });
@@ -146,6 +158,10 @@ window.addEventListener('DOMContentLoaded', function () {
         nextEl: '.rewiews-main__btn--next',
         prevEl: '.rewiews-main__btn--prew',
       },
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
 
     });
   }
@@ -155,32 +171,48 @@ window.addEventListener('DOMContentLoaded', function () {
   const portfolioServiceSlider = document.querySelector('.service-portfolio');
   if (portfolioServiceSlider) {
     const swiper = new Swiper(portfolioServiceSlider, {
-      slidesPerView: 3,
+      slidesPerView: 1,
       loop: true,
-      speed: 400,
+      speed: 1000,
       spaceBetween: 30,
 
       navigation: {
         nextEl: '.portfolio-service__btn--next',
         prevEl: '.portfolio-service__btn--prew',
       },
+      breakpoints: {
+        576: {
+          slidesPerView: 2
+        },
+        1024: {
+          slidesPerView: 3
+        },
+      },
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
 
     });
   }
 
-  //--------------------reviewsMainSlider
+  //--------------------reviewsPortfolioSlider
 
   const reviewsPortfolioSlider = document.querySelector('.reviews__slider--portfolio');
   if (reviewsPortfolioSlider) {
     const swiper = new Swiper(reviewsPortfolioSlider, {
       slidesPerView: 1,
       loop: true,
-      speed: 400,
+      speed: 800,
       spaceBetween: 30,
 
       navigation: {
         nextEl: '.rewiews-portfolio__btn--next',
         prevEl: '.rewiews-portfolio__btn--prew',
+      },
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
       },
 
     });
@@ -192,9 +224,28 @@ window.addEventListener('DOMContentLoaded', function () {
   if (projectSliderContainer) {
 
     const sliderSecondary = new Swiper('.project-slider__slider--secondary', {
-      slidesPerView: 10,
+      slidesPerView: 5,
       speed: 800,
-      spaceBetween: 20,
+      spaceBetween: 10,
+      breakpoints: {
+        576: {
+          slidesPerView: 6
+        },
+
+        768: {
+          slidesPerView: 7,
+          spaceBetween: 10,
+        },
+
+        1024: {
+          slidesPerView: 8
+        },
+
+        1230: {
+          slidesPerView: 10,
+          spaceBetween: 20
+        },
+      },
 
 
     });
@@ -221,23 +272,36 @@ window.addEventListener('DOMContentLoaded', function () {
   const portfolioProjectSlider = document.querySelector('.project-portfolio');
   if (portfolioProjectSlider) {
     const swiper = new Swiper(portfolioProjectSlider, {
-      slidesPerView: 3,
+      slidesPerView: 1,
       loop: true,
-      speed: 400,
+      speed: 1000,
       spaceBetween: 30,
 
       navigation: {
         nextEl: '.portfolio-project__btn--next',
         prevEl: '.portfolio-project__btn--prew',
       },
+      breakpoints: {
+        576: {
+          slidesPerView: 2
+        },
+        1024: {
+          slidesPerView: 3
+        },
+      },
+      autoplay: {
+        delay: 5500,
+        disableOnInteraction: false,
+      },
 
     });
   }
 
-  //--------------------portfolioProjectSlider
+  //--------------------historySlider
 
   const historySlider = document.querySelector('.history__swiper');
   if (historySlider) {
+    const pag = document.querySelectorAll('.history__date');
     const swiper = new Swiper(historySlider, {
       slidesPerView: 1,
       speed: 500,
@@ -249,9 +313,20 @@ window.addEventListener('DOMContentLoaded', function () {
         prevEl: '.history__btn--prew',
       },
 
+      on: {
+        slideChangeTransitionEnd: function (swiper) {
+          const index = swiper.activeIndex;
+          pag.forEach(btn => {
+            btn.classList.remove('history__date--active');
+          });
+
+          pag[index].classList.add('history__date--active');
+        }
+      }
+
     });
 
-    const pag = document.querySelectorAll('.history__date');
+    
 
     pag.forEach((btn, i) => {
       btn.addEventListener('click', (e) => {
@@ -263,7 +338,10 @@ window.addEventListener('DOMContentLoaded', function () {
         swiper.slideTo(i);
       });
     });
+
+
   }
+
 
 
 
@@ -347,7 +425,8 @@ window.addEventListener('DOMContentLoaded', function () {
   const accordeon = document.querySelector('.offer-service__accordeon');
 
   if (accordeon) {
-    const items = accordeon.querySelectorAll('.accordeon__item');
+    if(document.documentElement.clientWidth >= 768){
+      const items = accordeon.querySelectorAll('.accordeon__item');
     const btns = accordeon.querySelectorAll('.accordeon__btn');
 
     items[0].classList.add('accordeon__item--open');
@@ -364,6 +443,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
       });
     });
+    }
+    
   }
 
 
@@ -453,24 +534,51 @@ window.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-//------------modalSubscribe---------------
+  //------------modalSubscribe---------------
 
-const modalSubscribe = document.querySelector('.modal--subscribe');
+  const modalSubscribe = document.querySelector('.modal--subscribe');
 
-if(modalSubscribe){
-  const modalSubscribe = new Modal('.modal--subscribe', '.btn--subscribe');
-}
-
-
-//------------modalCv---------------
-
-const modalCv = document.querySelector('.modal--cv');
-
-if(modalCv){
-  const modalCv = new Modal('.modal--cv', '.btn--cv');
-}
+  if (modalSubscribe) {
+    const modalSubscribe = new Modal('.modal--subscribe', '.btn--subscribe');
+  }
 
 
+  //------------modalCv---------------
+
+  const modalCv = document.querySelector('.modal--cv');
+
+  if (modalCv) {
+    const modalCv = new Modal('.modal--cv', '.btn--cv');
+  }
+
+
+  //---------------BURGER-NAV------------------
+  const burger = document.querySelector('.header__burger');
+  if (burger) {
+    const nav = document.querySelector('.nav-main');
+
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('header__burger--close');
+      nav.classList.toggle('nav-main--active');
+    });
+  }
+
+  //-------------------adaptive our-services items height----------
+
+  const ourServicesItems = document.querySelectorAll('.our-services__link');
+
+  if (ourServicesItems.length > 0) {
+    const setSize = function () {
+      ourServicesItems.forEach(item => {
+        let size = item.offsetWidth;
+        item.style.height = `${size}px`;
+      });
+    };
+
+    setSize();
+
+    window.addEventListener('resize', setSize);
+  }
 
 
 
