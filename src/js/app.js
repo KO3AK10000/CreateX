@@ -456,9 +456,10 @@ window.addEventListener('DOMContentLoaded', function () {
     const portfolioTabs = new Tabs('.portfolio-section__babs');
   }
 
+
   //-----------------onlyNine-----------------
 
-  const load = document.querySelector('.portfolio-section__load-more');
+   const load = document.querySelector('.portfolio-section__load-more');
 
   if (load) {
     let portfolioItems;
@@ -498,18 +499,16 @@ window.addEventListener('DOMContentLoaded', function () {
     const tabsBtn = document.querySelector('.tabs__btns');
 
     tabsBtn.addEventListener('click', (e) => {
-      if (e.target.classList.contains('tabs__btn') || e.target.closest('li').classList.contains('tabs__btn')) {
         numOfShow = 9;
         onlyNine();
-      }
     });
 
     load.addEventListener('click', () => {
       numOfShow = (numOfShow + 9);
       onlyNine();
-    });
-
+    }); 
   }
+
 
   //--------------NEWS-Tabs----------
 
